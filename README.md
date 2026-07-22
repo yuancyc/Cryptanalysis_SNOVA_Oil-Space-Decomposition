@@ -31,7 +31,7 @@ Outputs a Markdown table with `log2(complexity)`, optimal `t`, `k'`, and `D` for
 
 | File | Description |
 |------|-------------|
-| `snova_toy_independence.sage` | Verifies the number of quadratically independent equations in System (4) after eliminating `y0`. Across all tested parameter sets, the script consistently reports a deficit of exactly `t·l` equations, confirming the paper's rank analysis. |
+| `snova_toy_independence.sage` | Verifies the number of quadratically independent equations in System (4) after eliminating `y0`. Across all tested parameter sets, the script consistently reports a deficit of exactly `t·l` equations. |
 
 The statement in Section 4.1 ("Attack Description") — *"In contrast to [4], distinct variables reduce redundant equations"* — is indeed correct: we cannot mimic the approach of [4] to prove the existence of redundant equations of the kind found there. Nevertheless, our experiments consistently confirm a deficit of exactly `t·l` equations. While we are unable to provide a rigorous derivation of the specific algebraic redundancy relations, this has negligible impact on the attack complexity. The updated complexity figures are given at the end of this document.
 
