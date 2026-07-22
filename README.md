@@ -33,7 +33,7 @@ These scripts implement the full attack without assuming knowledge of the oil su
 | `snova_benchmark.sage` | All 5 sets below | — | — |
 
 ```python
-sage snova_benchmark.sage
+sage "snova_benchmark.sage"
 ```
 
 Benchmarked parameters:
@@ -90,9 +90,9 @@ Outputs a Markdown table with `log2(complexity)`, optimal `t`, `k'`, and `D` for
 Run any script with SageMath:
 
 ```bash
-sage load("Basic Complexity.sage")
-sage load("snova_toy_(2,1,16,2).sage")
-sage load("snova_benchmark.sage")
+sage "Basic Complexity.sage"
+sage "snova_toy_(2,1,16,2).sage"
+sage "snova_benchmark.sage"
 # ... (see file overview above for all scripts)
 ```
 
