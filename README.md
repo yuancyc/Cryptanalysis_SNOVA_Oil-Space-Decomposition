@@ -44,9 +44,8 @@ Benchmarked parameters:
 | `(2,1,16,3)` | 9 | 27 | 91 |
 | `(2,1,16,4)` | 12 | 36 | 157 |
 | `(4,2,16,2)` | 12 | 36 | 85 |
-| `(5,2,16,2)` | 14 | 42 | 86 |
 
-**Benchmark results** (averaged over 5 runs per parameter set):
+**Benchmark results** (averaged over 4 runs per parameter set):
 
 | Parameters             | v | o | l·n | vars | eqns | solns | dim | M4GB(s) | Sage(s) | Total(s) | Verify |
 |------------------------|---|---|-----|------|------|-------|-----|---------|---------|----------|--------|
