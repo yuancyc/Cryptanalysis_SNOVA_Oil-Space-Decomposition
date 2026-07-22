@@ -90,9 +90,9 @@ Outputs a Markdown table with `log2(complexity)`, optimal `t`, `k'`, and `D` for
 Run any script with SageMath:
 
 ```bash
-sage "Basic Complexity.sage"
-sage "snova_toy_(2,1,16,2).sage"
-sage snova_benchmark.sage
+sage load("Basic Complexity.sage")
+sage load("snova_toy_(2,1,16,2).sage")
+sage load("snova_benchmark.sage")
 # ... (see file overview above for all scripts)
 ```
 
