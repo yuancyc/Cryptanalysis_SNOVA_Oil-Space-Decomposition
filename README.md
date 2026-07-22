@@ -14,19 +14,6 @@ Experimental code accompanying the paper **"New Key Recovery Attacks on SNOVA wi
 
 ## File Overview
 
-### Complexity Computation (Paper Tables 3 & 5)
-
-| File | Paper Reference | Description |
-|------|----------------|-------------|
-| `Basic Complexity.sage` | Table 3 | Optimal attack complexity with corrected formula `n = l*(v+o)` |
-| `Optimized Complexity.sage` | Table 5 | Optimal attack complexity with original formula `n = l*v + o` |
-
-```python
-sage "Basic Complexity.sage"
-```
-
-Outputs a Markdown table with `log2(complexity)`, optimal `t`, `k'`, and `D` for each SNOVA parameter set.
-
 ### Independence Verification
 
 | File | Description |
@@ -84,6 +71,19 @@ These scripts assume the oil subspace `O` is known and use nullspace enumeration
 | `snova_toy_know_(5,2,16,3).sage` | `SNOVA(5,2,16,3)` |
 | `snova_toy_know_(5,2,16,4).sage` | `SNOVA(5,2,16,4)` |
 | `snova_toy_know_(10,4,16,3).sage` | `SNOVA(10,4,16,3)` |
+
+### Complexity Computation (Paper Tables 3 & 5)
+
+| File | Paper Reference | Description |
+|------|----------------|-------------|
+| `Basic Complexity.sage` | Table 3 | Optimal attack complexity with corrected formula `n = l*(v+o)` |
+| `Optimized Complexity.sage` | Table 5 | Optimal attack complexity with original formula `n = l*v + o` |
+
+```python
+sage "Basic Complexity.sage"
+```
+
+Outputs a Markdown table with `log2(complexity)`, optimal `t`, `k'`, and `D` for each SNOVA parameter set.
 
 ## Usage
 
