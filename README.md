@@ -37,7 +37,7 @@ The statement in Section 4.1 ("Attack Description") — *"In contrast to [4], di
 
 ### Full Attack Implementation
 
-These scripts implement the full attack without assuming knowledge of the oil subspace. They construct System (4) and solve it using the M4GB Groebner-basis solver. **Ensure `m4gb/` is in the same directory as these scripts.** The attack was benchmarked across 5 small parameter sets.
+These scripts implement the full attack without assuming knowledge of the oil subspace. They construct System (4) and solve it using the M4GB Groebner-basis solver. Ensure `m4gb/` is in the same directory as these scripts. The attack was benchmarked across 5 small parameter sets.
 
 | File | Parameters | Variables | Equations |
 |------|------------|-----------|------------|
