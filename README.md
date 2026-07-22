@@ -112,7 +112,7 @@ M4GB_HOME = os.path.join(os.getcwd(), "m4gb")
 
 ## Basic Complexity Results (`n = l*(v+o)`)
 
-Output of `Basic Complexity.sage` (Table 3 — corrected formula).
+Output of `Basic Complexity.sage` (Corresponding Table 3).
 
 | Source         | SL  | Parameters              | log₂(complexity) | optimal t | k' | D |
 |----------------|-----|-------------------------|------------------|-----------|---|----|
@@ -144,7 +144,7 @@ Output of `Basic Complexity.sage` (Table 3 — corrected formula).
 
 ## Optimized Complexity Results (`n = l*v + o`)
 
-Output of `Optimized Complexity.sage` (Table 5 — original formula).
+Output of `Optimized Complexity.sage` (Corresponding Table 5).
 
 | Source         | SL  | Parameters              | log₂(complexity) | optimal t | k' | D |
 |----------------|-----|-------------------------|------------------|-----------|---|----|
