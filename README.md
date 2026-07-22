@@ -89,6 +89,34 @@ These scripts assume the oil subspace `O` is known and use nullspace enumeration
 | `snova_toy_know_(5,2,16,4).sage` | `SNOVA(5,2,16,4)` |
 | `snova_toy_know_(10,4,16,3).sage` | `SNOVA(10,4,16,3)` |
 
+**Sample output** (`SNOVA(10,4,16,3)`, 42 variables, `l=3`, `q=16`):
+
+```
+--- Result ---
+  Attack solution found:
+    y1, y2, y3  (42 components each)
+
+  W1^{-1} * y1 in O, last 12 coords -> o=4 blocks:
+    block 0: S^{1353} * e   OK
+    block 1: S^{494} * e    OK
+    block 2: S^{459} * e    OK
+    block 3: S^{655} * e    OK
+
+  W2^{-1} * y2 in O, last 12 coords -> o=4 blocks:
+    block 0: S^{3125} * e   OK
+    block 1: S^{2884} * e   OK
+    block 2: S^{1819} * e   OK
+    block 3: S^{1516} * e   OK
+
+  (S^n W2)^{-1} * y3 in O, last 12 coords -> o=4 blocks:
+    block 0: S^{144} * e    OK
+    block 1: S^{3743} * e   OK
+    block 2: S^{3436} * e   OK
+    block 3: S^{3652} * e   OK
+```
+
+All 12 oil blocks across `y1`, `y2`, `y3` are verified to lie in the expected S-orbits.
+
 ### Complexity Computation (Paper Tables 3 & 5)
 
 | File | Paper Reference | Description |
