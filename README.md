@@ -94,7 +94,9 @@ These scripts assume the oil subspace `O` is known and use nullspace enumeration
 ```
 --- Result ---
   Attack solution found:
-    y1, y2, y3  (42 components each)
+    y1 = [alpha^3, alpha^3+alpha, alpha^3+alpha, alpha^3+alpha^2, alpha^3+alpha^2+alpha+1, alpha^2+alpha, alpha^3+alpha, alpha^2+alpha, alpha^3+alpha, alpha+1, 0, alpha^2+alpha, alpha^2+alpha+1, alpha^2+1, alpha^3+alpha^2, 1, alpha+1, alpha^2, alpha^2+alpha+1, alpha^3+alpha^2, alpha^3+alpha+1, alpha, alpha^2+alpha, alpha^2, alpha+1, alpha^3+alpha^2+1, alpha^3+alpha^2, alpha^3+alpha^2+1, 0, alpha^3+alpha^2, 0, 0, 0, 0, 0, alpha, alpha^2+1, alpha^2+alpha+1, alpha+1, 0, alpha^2+alpha, alpha^2+1]
+    y2 = [alpha^3, alpha^3+alpha^2, 0, alpha^3+alpha^2+alpha, alpha^2+alpha+1, 0, alpha+1, alpha^3+1, alpha+1, alpha^2, alpha^3, alpha^3+alpha^2+1, alpha^3+alpha, alpha^3+alpha+1, alpha^3+alpha, 0, alpha^2+alpha+1, alpha^3+alpha^2+alpha+1, alpha^3+alpha^2+1, alpha^3+alpha+1, alpha^2, alpha^3+alpha, alpha^3+alpha, 1, 0, alpha+1, alpha^3+alpha^2+alpha, alpha^3+1, alpha^2+1, alpha^3+alpha^2+alpha+1, alpha+1, alpha, alpha^2+alpha+1, alpha^3+alpha+1, alpha^3, alpha^3+1, alpha^3+1, 0, alpha^2+alpha, alpha, alpha^3+alpha^2+alpha, alpha^3]
+    y3 = [alpha^2, alpha, alpha^3+alpha^2+alpha+1, alpha^2, alpha^3+alpha+1, alpha^2+alpha+1, alpha+1, alpha^3+alpha, alpha^3+alpha^2+alpha, alpha^3+alpha, 0, alpha^3+alpha^2+alpha+1, alpha^3+alpha^2, alpha^2+1, alpha^3+alpha^2+1, 0, alpha^3+alpha^2+alpha, alpha^2+alpha, alpha^3+alpha^2+1, 1, alpha^3+alpha^2+alpha, alpha^3+alpha, alpha^3+alpha^2+1, alpha^2+alpha, alpha^3+alpha^2+alpha, 1, alpha^3, alpha^3+1, alpha+1, alpha, alpha^3+alpha^2, alpha^3+alpha^2+alpha, alpha^2, 1, alpha^2+1, alpha^2+alpha+1, alpha^3, 1, alpha^2+1, alpha^3+alpha^2+alpha+1, alpha^3+1, alpha^2+alpha]
 
   W1^{-1} * y1 in O, last 12 coords -> o=4 blocks:
     block 0: S^{1353} * e   OK
