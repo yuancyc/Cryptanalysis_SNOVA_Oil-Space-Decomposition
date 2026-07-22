@@ -1,5 +1,7 @@
 # Cryptanalysis_SNOVA_Oil-Space-Decomposition
 
+# SNOVA — Key Recovery Attacks with Oil Space Decomposition
+
 Experimental code accompanying the paper **"New Key Recovery Attacks on SNOVA with the Oil Space Decomposition."**
 
 ## Environment
@@ -93,6 +95,7 @@ Run any script with SageMath:
 sage "Basic Complexity.sage"
 sage "snova_toy_(2,1,16,2).sage"
 sage snova_benchmark.sage
+# ... (see file overview above for all scripts)
 ```
 
 ### M4GB Path Configuration
@@ -100,7 +103,6 @@ sage snova_benchmark.sage
 Scripts that invoke M4GB (`snova_toy_(2,1,16,2).sage`, `snova_toy_(2,1,16,3).sage`, `snova_benchmark.sage`) use `./m4gb` relative to the working directory by default. To use a different path, edit the `M4GB_HOME` line near the top of each script:
 
 ```python
-# M4GB_HOME = "/home/yuan/Desktop/m4gb"
 M4GB_HOME = os.path.join(os.getcwd(), "m4gb")
 ```
 
@@ -173,3 +175,4 @@ Output of `Optimized Complexity.sage` (Table 5 — original formula).
 | Second-Round   | V   | (66,15,16,3)            | 456.67           | 5         | 2  | 36 |
 | Second-Round   | V   | (60,10,16,4)            | 599.54           | 6         | 1  | 46 |
 | Second-Round   | V   | (29,6,16,5)             | 262.31           | 5         | 0  | 19 |
+
