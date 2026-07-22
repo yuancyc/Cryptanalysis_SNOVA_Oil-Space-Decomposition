@@ -64,7 +64,6 @@ These scripts assume the oil subspace `O` is known and use nullspace enumeration
 
 | File | Parameters |
 |------|------------|
-| `snova_toy_know_(2,1,16,4).sage` | `SNOVA(2,1,16,4)` |
 | `snova_toy_know_(2,1,16,5).sage` | `SNOVA(2,1,16,5)` |
 | `snova_toy_know_(5,2,16,2).sage` | `SNOVA(5,2,16,2)` |
 | `snova_toy_know_(5,2,16,3).sage` | `SNOVA(5,2,16,3)` |
