@@ -100,7 +100,7 @@ sage snova_benchmark.sage
 
 ### M4GB Path Configuration
 
-Scripts that invoke M4GB (`snova_toy_(2,1,16,2).sage`, `snova_toy_(2,1,16,3).sage`, `snova_benchmark.sage`) use `./m4gb` relative to the working directory by default. To use a different path, edit the `M4GB_HOME` line near the top of each script:
+Please follow the instructions in the m4gb project to install m4gb. Scripts that invoke M4GB (`snova_toy_(2,1,16,2).sage`, `snova_toy_(2,1,16,3).sage`, `snova_benchmark.sage`) use `./m4gb` relative to the working directory by default. To use a different path, edit the `M4GB_HOME` line near the top of each script:
 
 ```python
 M4GB_HOME = os.path.join(os.getcwd(), "m4gb")
