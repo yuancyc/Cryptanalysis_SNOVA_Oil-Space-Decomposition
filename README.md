@@ -22,6 +22,25 @@ Experimental code accompanying the paper **"New Key Recovery Attacks on SNOVA wi
 
 The statement in Section 4.1 ("Attack Description") — *"In contrast to [4], distinct variables reduce redundant equations"* — is indeed correct: we cannot mimic the approach of [4] to prove the existence of redundant equations of the kind found there. Nevertheless, our experiments consistently confirm a deficit of exactly `t·l` equations. While we are unable to provide a rigorous derivation of the specific algebraic redundancy relations, we note that this has negligible impact on the attack complexity. We apologize for the lack of a rigorous proof on this point. The updated complexity figures are given at the end of this document.
 
+**Experimental results** (output of `snova_toy_independence.sage`):
+
+| l   | v  | o  | N   | D   | eqns | rank | deficit | t·l | kernel_dim |
+|-----|----|----|-----|-----|------|------|---------|-----|------------|
+| 2   | 5  | 2  | 14  | 28  | 72   | 66   | 6       | 6   | 6          |
+| 2   | 7  | 3  | 20  | 40  | 108  | 102  | 6       | 6   | 6          |
+| 2   | 8  | 3  | 22  | 44  | 108  | 102  | 6       | 6   | 6          |
+| 2   | 9  | 4  | 26  | 52  | 144  | 138  | 6       | 6   | 6          |
+| 2   | 10 | 4  | 28  | 56  | 144  | 138  | 6       | 6   | 6          |
+| 3   | 7  | 2  | 27  | 81  | 288  | 276  | 12      | 12  | 12         |
+| 3   | 10 | 3  | 39  | 117 | 432  | 420  | 12      | 12  | 12         |
+| 3   | 11 | 3  | 42  | 126 | 432  | 420  | 12      | 12  | 12         |
+| 3   | 13 | 4  | 51  | 153 | 576  | 564  | 12      | 12  | 12         |
+| 3   | 14 | 4  | 54  | 162 | 576  | 564  | 12      | 12  | 12         |
+| 4   | 9  | 2  | 44  | 176 | 800  | 780  | 20      | 20  | 20         |
+| 4   | 13 | 3  | 64  | 256 | 1200 | 1180 | 20      | 20  | 20         |
+| 4   | 14 | 3  | 68  | 272 | 1200 | 1180 | 20      | 20  | 20         |
+| 5   | 11 | 2  | 65  | 325 | 1800 | 1770 | 30      | 30  | 30         |
+
 ### Full Attack Implementation
 
 These scripts implement the full attack without assuming knowledge of the oil subspace. They construct System (4) and solve it using the M4GB Groebner-basis solver. Ensure `m4gb/` is in the same directory as these scripts. The attack was benchmarked across 5 small parameter sets.
