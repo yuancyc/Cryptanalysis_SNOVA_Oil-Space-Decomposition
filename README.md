@@ -1,7 +1,5 @@
 # Cryptanalysis_SNOVA_Oil-Space-Decomposition
 
-# SNOVA — Key Recovery Attacks with Oil Space Decomposition
-
 Experimental code accompanying the paper **"New Key Recovery Attacks on SNOVA with the Oil Space Decomposition."**
 
 ## Environment
