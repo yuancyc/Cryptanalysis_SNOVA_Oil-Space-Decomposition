@@ -12,6 +12,29 @@ Experimental code accompanying the paper **"New Key Recovery Attacks on SNOVA wi
 | Disk      | 80 GB |
 | Software  | SageMath 10.8 |
 
+## Toy Example: `SNOVA(2,1,16,2)`
+
+To make the attack concrete, we walk through the smallest parameter set `(v=2, o=1, l=2, q=16)`.
+
+| | Value | Description |
+|---|---|---|
+| UOV equivalent | `lv=4, lo=2, m=4` | 4 vinegar + 2 oil vars, 4 equations |
+| Ambient dimension `l·n` | 6 | vectors in `F_{16}^6` |
+| Attack variables | `y0, y1, y2` ∈ `F_{16}^6` | 3 × 6 = **18 variables** |
+| System (4) equations | 12 quad + 24 bilinear + 6 linear + 1 pin | **43 equations** |
+
+**Attack flow:**
+
+1. Select `W1, W2` from `V = span{ S^s P_k S^t }`, in different `S^n`-orbits.
+2. Form the linear constraint: `W1·y0 + W2·y1 + S^n W2·y2 = 0` (6 equations).
+3. Add quadratic constraints `y_i^T M y_i = 0` (12 eqns) and bilinear `y_i^T M y_j = 0` (24 eqns), plus `y1_0 = 1`.
+4. Solve the 43-equation system over `F_{16}` with M4GB (F4/F5 Groebner basis).
+5. **Result:** 2 solutions found in ~0.2s (M4GB) + ~4.1s (Sage variety extraction).
+
+The attack succeeds: applying `W1^{-1}, W2^{-1}, (S^n W2)^{-1}` to the recovered `y1, y2, y3` yields oil blocks of the form `S^{k_i} · e`, confirming Proposition 7.
+
+See `snova_toy_(2,1,16,2).sage` for the full implementation.
+
 ## File Overview
 
 ### Independence Verification
